@@ -25,7 +25,7 @@ class MoneyManager extends Component {
     optionId: transactionTypeOptions[0].optionId,
   }
 
-  deleteTansaction = id => {
+  deleteTransaction = id => {
     const {transactionList} = this.state
     const updatedTransactionList = transactionList.filter(
       eachTransaction => id !== eachTransaction.id,
